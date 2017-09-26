@@ -1,7 +1,7 @@
 main:
   - title: "home"
     url: /
-  - title: "articles"
-    url: /articles
+  - title: "blog"
+    url: /blog
   - title: "subscribe"
     url: /feed.xml
