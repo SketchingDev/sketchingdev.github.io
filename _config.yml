@@ -21,8 +21,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: flyingtophat
 github_username:  sketchingdev
-favicon: "/assets/images/bird.png"
-avatar: "/assets/images/bird.png"
+favicon: "/assets/images/logo.png"
+avatar: "/assets/images/logo.png"
 comments: false
 atom_feed:
   path: # blank (default) uses feed.xml
