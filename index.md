@@ -7,5 +7,5 @@ in a way that I would have understood them.
 
 Fancy being social? Then tweet me [@FlyingTopHat][twitter] or fork me on [GitHub][github].
 
-[twitter]: https://twitter.com/FlyingTopHat
-[github]: https://github.com/SketchingDev
+[twitter]: https://twitter.com/{{ site.twitter.username }}
+[github]: https://github.com/{{ site.github.username }}
