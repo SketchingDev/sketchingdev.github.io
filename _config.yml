@@ -31,7 +31,6 @@ twitter:
 
 # Build settings
 markdown: kramdown
-theme: sparrow-jekyll-theme
 plugins:
   - jekyll-feed
 
