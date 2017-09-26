@@ -1,10 +1,11 @@
 ---
 layout: home
-comments: false
 ---
 
-Hi, I'm a [Jekyll](https://jekyllrb.com/) theme. I am particularly great for a writer's blog or personal webpage. You can also use collections to hold your other writing projects, such as poetry. In this paragraph, you can provide some information about yourself. Below, your 3 most recent posts are listed.
+Hello! I'm Lucas, a software developer who enjoys drawing. This site is my attempt at explaining developer topics
+in a way that I would have understood them.
 
-This is a demo. You can find the source code and documentation [here](https://github.com/lingxz/sparrow).
+Fancy being social? Then tweet me [@FlyingTopHat][twitter] or fork me on [GitHub][github].
 
-Placeholder bird logo is made by [Freepik](http://www.freepik.com) from [Flaticon](http://www.flaticon.com) and licensed by [CC 3.0 BY](http://creativecommons.org/licenses/by/3.0/).
+[twitter]: https://twitter.com/FlyingTopHat
+[github]: https://github.com/SketchingDev
