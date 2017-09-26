@@ -9,9 +9,9 @@ comments: false
 atom_feed:
   path: # blank (default) uses feed.xml
 twitter:
-  username: flyingtophat
+  username: FlyingTopHat
 github:
-  username: sketchingdev
+  username: SketchingDev
 
 # Build settings
 markdown: kramdown
