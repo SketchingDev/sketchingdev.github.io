@@ -10,7 +10,7 @@ It was a pretty vexing problem I faced; not only had I forgotten my password for
 
 What peeked my curiosity though, is why it wasn't feasible to recover the password via brute-forcing? Or by a [dictionary attack](https://en.wikipedia.org/wiki/Dictionary_attack) for that matter. The following shows how KeePass intentionally slows down the process that is required to run in order to decrypt the stored credentials, and thus determine if the password is correct.
 
-You can explore these steps further with a [small tool I wrote](https://github.com/FlyingTopHat/KeePasswd).
+You can explore these steps further with a [small tool I wrote](https://github.com/SketchingDev/KeePasswd).
 
 ![Process of authenticating a password]({{ page.image-base }}/process.png)
 
@@ -33,7 +33,7 @@ Type ID                      Data Size           Data
 0x00 = End of Header 		
 ```
 
-Using the [KeePasswd tool](https://github.com/FlyingTopHat/KeePasswd) you can view the header of a KeePass database by calling the following:
+Using the [KeePasswd tool](https://github.com/SketchingDev/KeePasswd) you can view the header of a KeePass database by calling the following:
 
 ```bash
 $ keepasswd -file "C:\ExampleDatabase.kdbx" -header
@@ -139,7 +139,7 @@ Console.WriteLine("Password is " + (isPasswordCorrect ? "Correct" : "Wrong"));
 
 The whole process at the time of creating the database is configured to take approximately 1 second on the host's machine, which adds up to a considerable amount of time when you're trying to guess thousands of passwords.
 
-To see the whole process in action with the [KeePasswd tool](https://github.com/FlyingTopHat/KeePasswd) you can call the following:
+To see the whole process in action with the [KeePasswd tool](https://github.com/SketchingDev/KeePasswd) you can call the following:
 
 ```bash
 $ keepasswd -file "C:\\ExampleDatabase.kdbx" -passwords test1,test2,test3

@@ -12,7 +12,7 @@ handy!
 Before DaggerMock trying to provide mocked objects required (at the very least) a new module that will provide the
 mocked dependency and then depending on the approach you take having to build a dependency graph that includes your
 mocked module and all other non-mocked modules. The test below taken from a
-[demonstration project](https://github.com/FlyingTopHat/DaggerMock-Demonstration) I put together  shows just some of the
+[demonstration project](https://github.com/SketchingDev/DaggerMock-Demonstration) I put together  shows just some of the
 extra work just to inject a mocked `ButtonTextService`.
 
 ```java

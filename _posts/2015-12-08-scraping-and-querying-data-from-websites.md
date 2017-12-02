@@ -11,7 +11,7 @@ The 21st century has brought with it many technological advances, such as the ma
 In the interim a solution to this problem can be achieved with the help of a web scraping framework ([scrapy](http://scrapy.org/)), database ([MongoDB](https://www.mongodb.org/)) and a cup of tea ([Miles](http://www.djmiles.co.uk/)) - which we'll see in action scraping, storing and querying popular baby names from the website [BabyNameWizard](http://www.babynamewizard.com/).
 
 
-The baby name scraper that we're about to create is [hosted on GitHub](https://github.com/FlyingTopHat/Babyname-Scraper).
+The baby name scraper that we're about to create is [hosted on GitHub](https://github.com/SketchingDev/Babyname-Scraper).
 
 ![Illustration of website being scraped then searched]({{ page.image-base }}/process.png)
 
@@ -74,7 +74,7 @@ class WizardSpider(Spider):
     return item
 ```
 
-The methods in the spider can be tested to ensure that they're working as expected by using the [parse command](http://doc.scrapy.org/en/latest/topics/debug.html#parse-command). *Contracts can also be defined in the spider, which make testing much easier - you can see them in action in the [project on GitHub](https://github.com/FlyingTopHat/Babyname-Scraper)*.
+The methods in the spider can be tested to ensure that they're working as expected by using the [parse command](http://doc.scrapy.org/en/latest/topics/debug.html#parse-command). *Contracts can also be defined in the spider, which make testing much easier - you can see them in action in the [project on GitHub](https://github.com/SketchingDev/Babyname-Scraper)*.
 
 ```bash
 $ scrapy parse "http://www.babynamewizard.com/international-names-lists-popular-names-from-around-the-world" --spider=Wizard -c parse

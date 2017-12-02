@@ -11,7 +11,7 @@ You can find a link to the class below, along with some examples of how to use i
 
 ## Download
 
-[View the DataUri PHP class on my GitHub account](https://gist.github.com/3661056).
+[View the DataUri PHP class on my GitHub account](https://gist.github.com/SketchingDev/9f8dfbe0c6dd50de057dfdf063819a6d).
 
 *The DataUri class should not be used for validation! I developed it for convenience, not security.*
 

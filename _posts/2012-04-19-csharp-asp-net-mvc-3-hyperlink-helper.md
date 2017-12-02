@@ -12,18 +12,61 @@ The HyperlinkExtensions class consists of two extension methods for the HtmlHelp
 ## Example usage
 
 ```csharp
-@Html.Hyperlink("https://eff.org/", "EFF",
+@Html.Hyperlink("http://sketchingdev.co.uk/", "Sketching Dev",
     new Dictionary<string, object>()
     {
-        {"title", "Electronic Frontier Foundation"}
+        {"title", "The Sketching Developer"}
     }
 )
-// Output: <a href="https://eff.org/" title="Electronic Frontier Foundation">EFF</a>
+// Output: <a href="http://sketchingdev.co.uk/" title="The Sketching Developer">SketchingDev</a>
 ```
 
-## Download
+## Hyperlink Extensions class
 
-[View the Hyperlink Extensions class](https://gist.github.com/2407487).
+```csharp
+namespace ExampleProject.Helpers
+{
+    using System;
+    using System.Collections.Generic;
+    using System.Web.Mvc;
+
+    public static class HyperlinkExtensions
+    {
+        public static MvcHtmlString Hyperlink(this HtmlHelper helper, Uri url, string text = null, IDictionary<string, object> htmlAttributes = null)
+        {
+            if (url == null)
+            {
+                throw new ArgumentNullException("url");
+            }
+
+            return HyperlinkExtensions.Hyperlink(helper, url.AbsoluteUri, text, htmlAttributes);
+        }
+
+        public static MvcHtmlString Hyperlink(this HtmlHelper helper, string url, string text = null, IDictionary<string, object> htmlAttributes = null)
+        {
+            if (url == null)
+            {
+                throw new ArgumentNullException("url");
+            }
+
+            TagBuilder builder = new TagBuilder("a");
+            builder.Attributes.Add("href", url);
+
+            if (text != null)
+            {
+                builder.SetInnerText(text);
+            }
+
+            if (htmlAttributes != null)
+            {
+                builder.MergeAttributes(htmlAttributes);
+            }
+
+            return MvcHtmlString.Create(builder.ToString(TagRenderMode.Normal));
+        }
+    }
+}
+```
 
 ### Configuration
 

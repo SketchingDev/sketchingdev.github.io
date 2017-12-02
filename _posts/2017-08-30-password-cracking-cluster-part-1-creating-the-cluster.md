@@ -10,7 +10,7 @@ Until recently my home was strewn with old laptops of all different specificatio
 
 ![A hamster in a ball dodging laptops]({{ page.image-base }}/intro-image.jpeg)
 
-***TL;DR;*** *View the [Ansible-MPI-Cluster GitHub](https://github.com/FlyingTopHat/Ansible-MPI-Cluster) repo to see it in all its glory. In part 2 I’ll be adding password cracking capabilities.*
+***TL;DR;*** *View the [Ansible-MPI-Cluster GitHub](https://github.com/SketchingDev/Ansible-MPI-Cluster) repo to see it in all its glory. In part 2 I’ll be adding password cracking capabilities.*
 
 ## OpenMPI for distributed compute!
 
@@ -35,7 +35,7 @@ To further explain the simplicity of Ansible, it comprises of two main types of 
 
 Automated testing and developing on-the-go both require a virtual cluster. This is where [Vagrant](https://www.vagrantup.com/) comes into the fray; the final major technology in the stack.
 
-In my case Vagrant manages the creation of a virtual cluster based on the contents of the [vagrantfile](https://github.com/FlyingTopHat/Ansible-MPI-Cluster/blob/development/Vagrantfile). I have implemented it so that it:
+In my case Vagrant manages the creation of a virtual cluster based on the contents of the [vagrantfile](https://github.com/SketchingDev/Ansible-MPI-Cluster/blob/development/Vagrantfile). I have implemented it so that it:
 
  * Can create a variable amount of Ubuntu slave VMs
  * Setups a private network between the master and slave VMs
@@ -63,7 +63,7 @@ provisining/                  # files used by Ansible
 
 ## Seeing it in action
 
-The easiest way to see it in action is to follow the [Development section of the project’s readme](https://github.com/FlyingTopHat/Ansible-MPI-Cluster#development).
+The easiest way to see it in action is to follow the [Development section of the project’s readme](https://github.com/SketchingDev/Ansible-MPI-Cluster#development).
 
 At the end of provisioning via the `site.yml`  file it will run a test to ensure the cluster is working with MPI, so you should be presented with an output as satisfying as the one below:
 

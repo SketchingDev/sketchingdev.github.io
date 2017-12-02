@@ -132,8 +132,8 @@ if (currentBuild.result == 'UNSTABLE') {
     unstash 'built-site'
 
     withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'website', passwordVariable: 'PASSWORD', usernameVariable: 'USERNAME']]) {
-      sh 'SSHPASS=$PASSWORD sshpass -e ssh -l $USERNAME ${env.HOST} rm -rf /var/www/vhosts/flyingtophat.co.uk/httpdocs/*'
-      sh 'SSHPASS=$PASSWORD sshpass -e scp -r output/* $USERNAME@${env.HOST}:/var/www/vhosts/flyingtophat.co.uk/httpdocs'
+      sh 'SSHPASS=$PASSWORD sshpass -e ssh -l $USERNAME ${env.HOST} rm -rf /var/www/vhosts/sketchingdev.co.uk/httpdocs/*'
+      sh 'SSHPASS=$PASSWORD sshpass -e scp -r output/* $USERNAME@${env.HOST}:/var/www/vhosts/sketchingdev.co.uk/httpdocs'
     }
   }
 }

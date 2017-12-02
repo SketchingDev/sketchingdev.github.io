@@ -51,7 +51,7 @@ import random
 # by using MonkeyRunner.
 #
 # Read the instructions for setting it up here:
-# http://flyingtophat.co.uk/blog/2015/08/03/conquering-the-monolith-beast-with-android-monkeyrunner.html
+# http://sketchingdev.com/blog/conquering-the-monolith-beast-with-android-monkeyrunner.html
 #
 # ##### "Tapping is so Middle Ages!"
 # #####   -- Monolith
@@ -59,7 +59,7 @@ import random
 # #####
 
 __author__ = 'Lucas'
-__homepage__ = 'http://www.flyingtophat.co.uk/'
+__homepage__ = 'http://sketchingdev.com/'
 __version__ = '1.0'
 __date__ = '2015/08/03'
 

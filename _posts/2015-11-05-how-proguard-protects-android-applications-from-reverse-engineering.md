@@ -35,10 +35,10 @@ There are [many steps to the build process](https://github.com/dogriffiths/HeadF
 3. Compile Java classes into Dalvik byte-code
 4. Package resulting .dex files into an APK
 
-We can see the build process in action by cloning the [demonstration project](https://github.com/FlyingTopHat/ProGuard-Demonstration) that I created and then calling the `assembleRelease` gradle task, which will build the release APK without signing it.
+We can see the build process in action by cloning the [demonstration project](https://github.com/SketchingDev/ProGuard-Demonstration) that I created and then calling the `assembleRelease` gradle task, which will build the release APK without signing it.
 
 ```bash
-$ git clone https://github.com/FlyingTopHat/ProGuard-Demonstration.git
+$ git clone https://github.com/SketchingDev/ProGuard-Demonstration.git
 $ cd ProGuard-Demonstration/
 
 $ ./gradlew assembleRelease

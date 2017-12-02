@@ -7,7 +7,7 @@ categories: testing pig avro java
 
 Writing unit tests for [Apache Pig](https://pig.apache.org/) is easy with [PigUnit](https://pig.apache.org/docs/r0.8.1/pigunit.html), however writing tests for scripts that load data from an
 Avro file requires a little more work. Those impatient to see a working example can check out my
-[demonstration project](https://github.com/FlyingTopHat/PigScript-Avro-Test).
+[demonstration project](https://github.com/SketchingDev/PigScript-Avro-Test).
 
 ## Script under test
 
@@ -44,7 +44,7 @@ STORE people_over_24 INTO 'output' USING AvroStorage();
 ```
 
 The test data can then be passed into the `PigTest` class' `assertOutput`, as the code segment from my
-[demonstration project](https://github.com/FlyingTopHat/PigScript-Avro-Test) shows...
+[demonstration project](https://github.com/SketchingDev/PigScript-Avro-Test) shows...
 
 ```java
 public class PigAvroTest {
