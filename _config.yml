@@ -30,4 +30,4 @@ plugins:
 whitelist:
   - jekyll-feed
 
-permalink: /blog/:title/
+permalink: /blog/:title.html
