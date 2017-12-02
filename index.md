@@ -2,8 +2,7 @@
 layout: home
 ---
 
-Hello! I'm Lucas, a professional software developer who enjoys drawing. This site is my attempt at explaining developer
- topics in a way that I would have understood them.
+Hello! I'm Lucas, a professional software developer who enjoys drawing. That's pretty much it I'm afraid...
 
 Fancy being social? Then tweet me [@{{ site.twitter.username }}][twitter] or fork me on [GitHub][github].
 
