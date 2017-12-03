@@ -61,4 +61,4 @@ else
 fi
 ```
 
-If you're interested in seeing it in action, check out the [Travis job](https://travis-ci.org/FlyingTopHat/OpenALPR-Docker).
+If you're interested in seeing it in action, check out the [Travis job](https://travis-ci.org/SketchingDev/OpenALPR-Docker).
