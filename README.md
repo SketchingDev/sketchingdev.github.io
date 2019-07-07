@@ -5,7 +5,7 @@ This site is my attempt at explaining developer topics in a way that I would hav
 ## Development
 
 ```
-$ bundle install
+$ bundle install --path vendor/bundle
 $ bundle exec jekyll serve
 ```
 
