@@ -18,7 +18,7 @@ One such architecture that I wanted to write about is Hexagonal Architecture (mo
 
 Every architectural pattern is trying to provide a solution to a common problem, so let’s look at a suitable problem…
 
-![Outlines of customers being deleted]({{ page.image-base }}/problem-image.jpg)
+![Outlines of customers being deleted]({{ page.image-base }}/problem-image.png)
 
 At the energy company I work for we have a lot of customers in our systems and with the natural ebb and flow of any large organisation, we are regularly opening and closing accounts. Let us imagine then, that we’ve been tasked with writing a system that will automatically close these accounts. We do this by:
 
