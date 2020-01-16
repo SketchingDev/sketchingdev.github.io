@@ -88,8 +88,8 @@ Since we want to create a fully deployable solution, yet not burden ourselves wi
 Where we would have performed HTTP requests, our stub adaptor will instead just return the domain object — in the real world we would have mapped the HTTP response to this object.
 
 ```typescript
-import { FuelType, Meter, Unit } from “../../../domain/models/Meter";
-import { AccountManager } from “./AccountManager”;
+import { FuelType, Meter, Unit } from "../../../domain/models/Meter";
+import { AccountManager } from "./AccountManager";
 
 /**
  * Adaptor for managing AmazingEnergy customers
@@ -168,8 +168,8 @@ We’ll skip the [merits](https://twitter.com/jeremy_daly/status/119209025104667
 // handlerHttp.ts
 
 //...
-import { CloseAccount, closeAccount } from “./app/domain/closeAccount";
-import { apiGatewayAdapter } from “./app/instrastructure/driving/apiGatewayAdapter”;
+import { CloseAccount, closeAccount } from "./app/domain/closeAccount";
+import { apiGatewayAdapter } from "./app/instrastructure/driving/apiGatewayAdapter";
 
 
 // Instantiate core functionality with its dependencies
