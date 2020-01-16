@@ -18,7 +18,7 @@ To allow me to analyse the summary table I wrote a [PowerShell Cmdlet](https://t
 
 This means tasks like ordering the summary table or finding any failures are now really simple:
 
-```PowerShell
+```
 > Get-Content "C:\robocopy.log" -Raw | Select-RoboSummary | Sort-Object Type | Format-Table
 
 Type       Total       Copied       Skipped       Mismatch       Failed       Extras                          

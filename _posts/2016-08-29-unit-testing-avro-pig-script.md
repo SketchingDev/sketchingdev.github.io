@@ -14,7 +14,7 @@ Avro file requires a little more work. Those impatient to see a working example 
 The script we want to test simply filters out people who are older than 24 from an Avro file and then saves the
 results back to an Avro file. Nothing too extraneous.
 
-```pig
+```
 people = LOAD '$DATA_INPUT' USING AvroStorage();
 
 people_over_24 = FILTER people BY age > 24;
@@ -30,7 +30,7 @@ override the `LOAD` statement with the schema, defined using the
 [`AS` keyword](https://pig.apache.org/docs/r0.7.0/piglatin_ref2.html#LOAD). You can see this in action by examining
 the console's output when running the test.
 
-```pig
+```
 STORE people_over_24 INTO 'output' USING AvroStorage();
 --> none
 people: {name: chararray,age: int}

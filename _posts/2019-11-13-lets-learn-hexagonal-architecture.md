@@ -189,7 +189,7 @@ There we go, nothing too complicated. We can now write any number of adaptors th
 
 ## Next time… applying Hexagonal Architecture to our problem
 
-In the next article we’ll look to apply what we’ve learned to create a fully deployable solution (minus the industry backend of course).
+In the [next article](https://sketchingdev.co.uk/blog/lets-apply-hexagonal-architecture.html) we’ll look to apply what we’ve learned to create a fully deployable solution (minus the industry backend of course).
 
 Until then however I hope this article has provided you with enough knowledge to apply hexagonal architecture when you’re faced with a similar problem. Just remember to apply it wisely, as no pattern is a panacea to every problem.
 

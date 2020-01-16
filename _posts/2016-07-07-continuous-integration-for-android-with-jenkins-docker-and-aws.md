@@ -23,7 +23,7 @@ The dockerfile is based on
 [Jacek Marchwicki's image](https://hub.docker.com/r/jacekmarchwicki/android/), with a number of modifications to improve
 caching and SDK versioning.
 
-```dockerfile
+```
 FROM ubuntu:14.04
 
 # Install Java7
