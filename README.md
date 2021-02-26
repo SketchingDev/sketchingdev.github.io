@@ -4,9 +4,9 @@ This site is my attempt at explaining developer topics in a way that I would hav
 
 ## Development
 
-```
-$ bundle install --path vendor/bundle
-$ bundle exec jekyll serve
+```shell
+bundle install --path vendor/bundle
+bundle exec jekyll serve
 ```
 
 ## Thanks

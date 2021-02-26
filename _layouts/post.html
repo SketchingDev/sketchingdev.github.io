@@ -14,25 +14,25 @@ layout: default
     <div class="post__inner-wrap">
       <header>
         {% if page.title %}<h1 class="post__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
-        
+
         {% if page.date %}
         <p class="post__meta"> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }} </time></p>
         {% endif %}
       </header>
-      
+
       <section class="post__content" itemprop="text">
         {{ content }}
-        
+
         {% if page.share %}{% include social-share.html %}{% endif %}
-      
+
       </section>
 
     </div>
 
+    <p style="font-style: italic">If you have any suggestions on how I can improve this article, or my writing then please let me know <a href="https://twitter.com/sketchingdev">@SketchingDev</a></p>
     {% if site.comments and page.comments != false %}
       {% include comments.html %}
     {% endif %}
-
 
   </article>
 </div>
