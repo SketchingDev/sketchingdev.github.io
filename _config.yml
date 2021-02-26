@@ -25,10 +25,6 @@ plugins:
 author:
   name: "SketchingDev" # appears in the footer and atom feed
 
-# Plugins
-plugins:
-  - jekyll-feed
-
 # mimic GitHub Pages with --safe
 whitelist:
   - jekyll-feed
