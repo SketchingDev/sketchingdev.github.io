@@ -43,7 +43,7 @@ From the customer's perspective they:
 Let's tackle each step and build out our application as we go. We start with a blank application that runs on any
 computer.
 
-<p align="center">
+<p style="text-align: center">
   <img alt="Blank application ready for functionality to be added" src="{{ page.image-base }}/application-1.png" />
 </p>
 
