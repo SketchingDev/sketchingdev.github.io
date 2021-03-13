@@ -14,16 +14,16 @@ Having recently helped develop such IVR flows, I've been surprised by the lack o
 testing them. I've instead been subjected to manually calling the flow each time I wanted to test a change - a slow and
 erroneous process.
 
-To ease my suffering, I'm creating [IVR Tester](https://github.com/SketchingDev/ivr-tester), a tool that automates 
+To ease my suffering, I'm creating [IVR Tester](https://github.com/SketchingDev/ivr-tester), a tool that automates
 calling IVR flows and traversing them based on what it hears. The benefits of such a tool are:
 
 - Customers get value quicker. Those developing flows don't have to waste time manually calling them each time they them
   want to regression test it (reducing [cycle time](https://www.davefarley.net/?p=218))
-- [Synthetic testing](https://en.wikipedia.org/wiki/Synthetic_monitoring) can be set up to routinely test that 
-  production call flows are working as expected from the customer's perspective  
+- [Synthetic testing](https://en.wikipedia.org/wiki/Synthetic_monitoring) can be set up to routinely test that
+  production call flows are working as expected from the customer's perspective
 - End-to-end tests can test flows and their integrations, as part of a continuous delivery pipeline
 
-Developing this tool has been an interesting journey and one I'd like to share with you from a high-level (hopefully 
+Developing this tool has been an interesting journey and one I'd like to share with you from a high-level (hopefully
 non-technical) perspective.
 
 Let us begin by observing a human interacting with a call flow...
@@ -50,10 +50,10 @@ computer.
 
 ### Calling the IVR flow
 
-Calling a phone number is a complicated business, but thankfully companies like [Twilio](http://twilio.com/) abstract 
+Calling a phone number is a complicated business, but thankfully companies like [Twilio](http://twilio.com/) abstract
 away this complexity. In Twilio's case, they offer their
-[MediaStream API](https://www.twilio.com/blog/media-streams-public-beta), which can call a phone number and then 
-establish a bi-directional audio stream with our application. Our application is then capable of listening to a call's 
+[MediaStream API](https://www.twilio.com/blog/media-streams-public-beta), which can call a phone number and then
+establish a bi-directional audio stream with our application. Our application is then capable of listening to a call's
 audio, and responding with its own audio.
 
 Once plumbed in, it is a 3-step process to establish a call:
@@ -75,20 +75,20 @@ ease, however computers haven't been so fortunate. To provide the application wi
 going to transcribe the audio, as text is much easier to perform matches against (which we'll do later on).
 
 The two main providers for transcribing audio streams are
-[Google’s Speech-to-Text](https://cloud.google.com/speech-to-text) and
-[Amazon’s Transcribe](https://aws.amazon.com/transcribe/). Although both APIs are very similar, Google's is more geared
-towards telephony, as it allows you to provide the telephony standard audio format of 8-bit PCM mono uLaw 
+[Google's Speech-to-Text](https://cloud.google.com/speech-to-text) and
+[Amazon's Transcribe](https://aws.amazon.com/transcribe/). Although both APIs are very similar, Google's is more geared
+towards telephony, as it allows you to provide the telephony standard audio format of 8-bit PCM mono uLaw
 (8Khz sampling rate) and has a model pre-trained for phone calls.
 
 ![Application transcribing audio from Twilio]({{ page.image-base }}/application-3.png)
 
-Once again, here’s the code if you’re interested: [GoogleSpeechToText.ts](https://github.com/SketchingDev/ivr-tester/blob/4d85b12d4d1187072145690e70f4a6a456401119/packages/transcriber-google-speech-to-text/src/GoogleSpeechToText.ts)
+Once again, here's the code if you're interested: [GoogleSpeechToText.ts](https://github.com/SketchingDev/ivr-tester/blob/4d85b12d4d1187072145690e70f4a6a456401119/packages/transcriber-google-speech-to-text/src/GoogleSpeechToText.ts)
 
-Now when we establish a call we can forward the audio to Google’s Speech-to-Text service and receive a transcription 
+Now when we establish a call we can forward the audio to Google's Speech-to-Text service and receive a transcription
 like below:
 
 > Please enter the numbers from your post code. For example, if your post code is a 12 8 B c. He would enter 12 indeed.
-> Please. Breath has when you are finished”
+> Please. Breath has when you are finished
 
 The observant amongst you will have noticed the last part makes no sense at all, and herein lies the Achilles heel of
 this approach. Transcriptions aren't perfect (although they can be trained), so we have to be lenient to these mistakes,
@@ -101,8 +101,8 @@ Navigating a call flow is more reliably performed using your phone's keypad - we
 with voice-recognition. Pressing your keypad works by producing a tone within the voice-frequency band that is unique
 to each key - known as DTMF or touch tones.
 
-Producing them programmatically is beyond my expertise, however [creating audio files that can be played back 
-isn't](https://github.com/SketchingDev/ivr-tester/tree/4d85b12d4d1187072145690e70f4a6a456401119/packages/ivr-tester/src/call/dtmf/raw). 
+Producing them programmatically is beyond my expertise, however [creating audio files that can be played back
+isn't](https://github.com/SketchingDev/ivr-tester/tree/4d85b12d4d1187072145690e70f4a6a456401119/packages/ivr-tester/src/call/dtmf/raw).
 These audio files can be easily created using [Sound eXchange (SoX)](http://sox.sourceforge.net/):
 
 ```shell
@@ -112,7 +112,7 @@ sox -n -r 8000 -t raw -e u-law -c 1 -b 8 1.raw synth 0.5 sin 1209 sin 697 pad 0 
 
 ![Application responding to a call with DTMF tones]({{ page.image-base }}/application-4.png)
 
-The application can now push the contents of these files onto the call's audio stream to simulate a phone's keypad 
+The application can now push the contents of these files onto the call's audio stream to simulate a phone's keypad
 being pressed.
 
 ### When to play a response
@@ -146,7 +146,7 @@ fluent enough to act as documentation for the flow too!
 
 ![Application that can establish, translate and respond to calls]({{ page.image-base }}/application-5.png)
 
-After gluing it all together, and adding a few bells and whistles, you end up with something like 
+After gluing it all together, and adding a few bells and whistles, you end up with something like
 [IVR Tester](https://github.com/SketchingDev/ivr-tester).
 
 ![Terminal running a test with IVR Tester]({{ page.image-base }}/terminal-recording.gif)
