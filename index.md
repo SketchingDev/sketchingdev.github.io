@@ -2,7 +2,7 @@
 layout: home
 ---
 
-Hello! I'm Lucas, a professional software developer who enjoys drawing. That's pretty much it I'm afraid...
+Hello! I'm Lucas, a software developer who enjoys drawing. That's pretty much it I'm afraid...
 
 Fancy being social? Then tweet me [@{{ site.twitter.username }}][twitter] or fork me on [GitHub][github].
 

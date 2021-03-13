@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Let’s apply Hexagonal Architecture!"
+title:  "Let's apply Hexagonal Architecture!"
 date:   2020-01-15 00:00:00
 categories: architecture hexagonal
 image-base: /assets/images/posts/2020-01-15-lets-apply-hexagonal-architecture
@@ -188,5 +188,3 @@ The exported handler initialised above is what the Lambda invokes when it receiv
 There it is… there is nothing special going on. We're just using interface segregation with the ports, and some dependency injection to wire together the adaptors with the core functionality. But by thinking in terms of ports and adaptors it has informed where the responsibilities lay and kept a separation between our business logic and the infrastructure it relies on.
 
 Hopefully next time you are tasked with writing an application, or refactoring an old one you’ll take Hexagonal Architecture into consideration. You can use this [article’s repository](https://github.com/SketchingDev/hexagonal-lambda) as a guide.
-
-_If you have any suggestions on how I can improve this article, or my writing then please let me know [@SketchingDev](https://twitter.com/sketchingdev), or leave a comment_
