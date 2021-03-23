@@ -6,9 +6,10 @@ categories: gtd kanban kanbanflow
 image-base: /assets/images/posts/2015-02-08-gtd-in-kanban-flow
 ---
 
-KanbanFlow is a simply decorated website with a clean design and an orientation towards, unsurprisingly, the Kanban
-methodologies. Thankfully, for someone like myself who likes its clean design, but has a preference for Getting Things
-Done (GTD) I was able to shoe-horn GTD into the KanbanFlow website with surprising success.
+[KanbanFlow](https://kanbanflow.com/) is a simply decorated website with a clean design and an orientation towards,
+unsurprisingly, the [Kanban methodologies](https://en.wikipedia.org/wiki/Kanban). Thankfully, for someone like myself
+who likes its clean design, but has a preference for [Getting Things Done (GTD)](http://hamberg.no/gtd/) I was able to
+shoe-horn GTD into the KanbanFlow website with surprising success.
 
 Below is how to use GTD with Kanban Flow - unfortunately some of the functionality requires a premium subscription
 (costing £4~ a month at the time of writing this).
