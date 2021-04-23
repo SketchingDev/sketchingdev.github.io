@@ -45,7 +45,7 @@ Let's tackle each step and build out our application as we go. We start with a b
 computer.
 
 <p style="text-align: center">
-  <img alt="Blank application ready for functionality to be added" src="{{ page.image-base }}/application-1.png" />
+  <img class="ui image" alt="Blank application ready for functionality to be added" src="{{ page.image-base }}/application-1.png" />
 </p>
 
 ### Calling the IVR flow

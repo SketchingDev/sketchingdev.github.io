@@ -1,0 +1,26 @@
+.site-name, .page-title {
+    font-family: Gochi Hand,"Hiragino Sans GB","WenQuanYi Micro Hei","Microsoft YaHei",sans-serif
+}
+
+body {
+    font-size: 18px;
+}
+
+.ui.container {
+    max-width: 700px !important;
+}
+
+.ui.container img {
+    max-width: 100%;
+}
+
+.ui.list>a.item {
+    cursor: pointer;
+    color: #1CB084;
+    /*  color: #41C49C;*/
+    /*    color: #7CEAD9;*/
+}
+
+.ui.list>a.item:hover{
+    color: #2F8C70;
+}

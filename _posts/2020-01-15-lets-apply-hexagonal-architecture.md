@@ -97,7 +97,7 @@ import { AccountManager } from "./AccountManager";
 export class StubAmazingEnergy implements AccountManager {
 
   private static readonly ELECTRICITY_METER: Readonly<Meter> = {
-    id: “elec-id”,
+    id: "elec-id",
     fuelType: FuelType.Electricity,
     lastKnownReading: {
       value: 123,
@@ -106,7 +106,7 @@ export class StubAmazingEnergy implements AccountManager {
   };
 
   private static readonly GAS_METER: Readonly<Meter> = {
-    id: “gas-id”,
+    id: "gas-id",
     fuelType: FuelType.Gas,
     lastKnownReading: {
       value: 456,
@@ -144,15 +144,15 @@ The code for this adaptor isn’t complicated either, as all it is doing is tryi
 export const apiGatewayAdapter = (next: CloseAccount): APIGatewayProxyHandler => async event => {
   const id = tryExtractId(event);
   if (!id) {
-    return response(“Account not defined”, 500);
+    return response("Account not defined", 500);
   }
 
   try {
     await next(id);
-    return response(“Successfully closed account”);
+    return response("Successfully closed account");
   } catch (err) {
     console.error(err);
-    return response(“Unknown error”, 500);
+    return response("Unknown error", 500);
   }
 };
 ```
