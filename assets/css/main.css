@@ -5,6 +5,7 @@
 body {
     font-size: 18px;
     font-family: Heebo,"Hiragino Sans GB","WenQuanYi Micro Hei","Microsoft YaHei Light",sans-serif;
+    margin-top: 40px
 }
 
 .ui.container {
@@ -21,4 +22,5 @@ body {
 
 .highlight {
     overflow: auto;
+    margin-bottom: 20px !important;
 }
