@@ -29,7 +29,7 @@ Files      2           2            0             0              1            0
 ```
 
 ```powershell
-Get-Content "C:\robocopy.log" -Raw | Select-RoboSummary | Where{ $_.Failed -gt 0 }
+> Get-Content "C:\robocopy.log" -Raw | Select-RoboSummary | Where{ $_.Failed -gt 0 }
 ```
 
 ```powershell
