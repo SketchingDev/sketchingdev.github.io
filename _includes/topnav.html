@@ -1,15 +1,18 @@
 <h1 class="ui header">
   <img src="{{ site.avatar | absolute_url }}" alt="{{ site.name }}">
+
   <div class="content">
-  <div class="site-name">{{ site.title }}</div>
-  <div class="sub header">{{ site.description }}</div>
+    <div class="site-name">{{ site.title }}</div>
+    <div class="sub header">{{ site.description }}</div>
+
+    <nav class="ui blue text menu sub">
+      {% for link in site.data.navigation.main %}
+      <a class="item" href="{{ domain }}{{ link.url }}">
+        {{ link.title }}
+      </a>
+      {% endfor %}
+    </nav>
+
   </div>
 </h1>
 
-<nav class="ui blue text menu">
-  {% for link in site.data.navigation.main %}
-  <a class="item" href="{{ domain }}{{ link.url }}">
-    {{ link.title }}
-  </a>
-  {% endfor %}
-</nav>

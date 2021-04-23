@@ -14,13 +14,17 @@ body {
     max-width: 100%;
 }
 
-.ui.list>a.item {
-    cursor: pointer;
-    color: #1CB084;
-    /*  color: #41C49C;*/
-    /*    color: #7CEAD9;*/
+.menu>a.item {
+    color: #4183c4 !important;
 }
 
-.ui.list>a.item:hover{
-    color: #2F8C70;
-}
+/*.ui.list>a.item {*/
+/*    cursor: pointer;*/
+/*    color: #1CB084;*/
+/*    !*  color: #41C49C;*!*/
+/*    !*    color: #7CEAD9;*!*/
+/*}*/
+
+/*.ui.list>a.item:hover{*/
+/*    color: #2F8C70;*/
+/*}*/
