@@ -1,9 +1,10 @@
 .site-name, .page-title {
-    font-family: Gochi Hand,"Hiragino Sans GB","WenQuanYi Micro Hei","Microsoft YaHei",sans-serif
+    font-family: Gochi Hand,"Hiragino Sans GB","WenQuanYi Micro Hei","Microsoft YaHei",sans-serif;
 }
 
 body {
     font-size: 18px;
+    font-family: Heebo,"Hiragino Sans GB","WenQuanYi Micro Hei","Microsoft YaHei Light",sans-serif;
 }
 
 .ui.container {
@@ -18,13 +19,6 @@ body {
     color: #4183c4 !important;
 }
 
-/*.ui.list>a.item {*/
-/*    cursor: pointer;*/
-/*    color: #1CB084;*/
-/*    !*  color: #41C49C;*!*/
-/*    !*    color: #7CEAD9;*!*/
-/*}*/
-
-/*.ui.list>a.item:hover{*/
-/*    color: #2F8C70;*/
-/*}*/
+.highlight {
+    overflow: auto;
+}
