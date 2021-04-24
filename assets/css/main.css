@@ -1,11 +1,11 @@
 .site-name, .page-title {
-    font-family: Gochi Hand,"Hiragino Sans GB","WenQuanYi Micro Hei","Microsoft YaHei",sans-serif;
+    font-family: Gochi Hand, "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft YaHei", sans-serif;
 }
 
 body {
     font-size: 18px;
-    font-family: Heebo,"Hiragino Sans GB","WenQuanYi Micro Hei","Microsoft YaHei Light",sans-serif;
-    margin-top: 40px
+    font-family: Heebo, "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft YaHei Light", sans-serif;
+    margin-top: 40px;
 }
 
 .ui.container {
@@ -16,7 +16,7 @@ body {
     max-width: 100%;
 }
 
-.menu>a.item {
+.menu > a.item {
     color: #4183c4 !important;
 }
 
