@@ -9,6 +9,13 @@ bundle install --path vendor/bundle
 bundle exec jekyll serve
 ```
 
+## Resizing sketchnote images
+
+```shell
+sips -Z 640 <input> --out <output>
+```
+
+
 ### Problem installing racc
 
 ```

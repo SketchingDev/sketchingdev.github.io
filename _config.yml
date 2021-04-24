@@ -34,4 +34,8 @@ author:
 whitelist:
   - jekyll-feed
 
+collections:
+  sketchnotes:
+    output: true
+
 permalink: /blog/:title.html

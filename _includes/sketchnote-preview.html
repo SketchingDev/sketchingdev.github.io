@@ -1,0 +1,15 @@
+<div class="ui link card">
+    <div class="image">
+        <a class="header" href="{{ sketchnote.url | absolute_url }}">
+            <img alt="Thumbnail of {{ sketchnote.title | strip_html | strip_newlines | escape_once }} sketchnote" src="{{ sketchnote.thumbnail | absolute_url }}">
+        </a>
+    </div>
+    <div class="content">
+        <a class="header" href="{{ sketchnote.url | absolute_url }}">{{ sketchnote.title }}</a>
+        <div class="meta">
+            <span class="date">
+                <time datetime="{{ sketchnote.date | date_to_xmlschema }}">{{ sketchnote.date | date: "%B %d, %Y" }}</time>
+            </span>
+        </div>
+    </div>
+</div>
