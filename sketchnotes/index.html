@@ -3,25 +3,11 @@ layout: page
 title: Sketch Notes
 ---
 
-<div class="ui two column grid centered">
-    {% for sketchnote in site.sketchnotes %}
-<!--    {% assign mod3 = forloop.index | modulo: 2 %}-->
-
-<!--    {% if mod3 == 2 %}-->
-<!--    <div class="two column row">-->
-<!--    {% endif %}-->
-
+<div class="ui stackable three column grid centered">
+    {% assign sorted_sketchnotes = site.sketchnotes | reverse %}
+    {% for sketchnote in sorted_sketchnotes %}
     <div class="column">
         {% include sketchnote-preview.html %}
     </div>
-
-<!--    {% if mod3 == 2 %}-->
-<!--    </div>-->
-<!--    {% endif %}-->
-
-
-<!--    <div class="col-md-6"><p>{{ post.title }}</p></div>-->
-<!--    {% if mod3 == 0 %}<div class="col-md-6"><p>THIS IS NOT A POST</p>{% endif %}-->
-<!--    {% if mod3 == 0 or mod3 == 2 %}</div><div class="row blogitems">{% endif %}-->
     {% endfor %}
 </div>

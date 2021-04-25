@@ -1,3 +1,4 @@
+
 <div class="ui link card">
     <div class="image">
         <a href="{{ sketchnote.url | absolute_url }}">
@@ -7,11 +8,9 @@
     <div class="content">
         <a class="header" href="{{ sketchnote.url | absolute_url }}">{{ sketchnote.title }}</a>
         <div class="meta">
-
             <span class="date">
                 <time datetime="{{ sketchnote.date | date_to_xmlschema }}">{{ sketchnote.date | date: "%B %d, %Y" }}</time>
             </span>
-
         </div>
     </div>
 </div>
