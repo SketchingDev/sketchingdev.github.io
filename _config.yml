@@ -1,4 +1,4 @@
-title: The Sketching Developer
+title: Sketching Developer
 title_separator: "-"
 description: "Sketching my way through developer topics"
 baseurl: ""
@@ -37,5 +37,6 @@ whitelist:
 collections:
   sketchnotes:
     output: true
+    permalink: /:collection/:title.html
 
 permalink: /blog/:title.html

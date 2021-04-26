@@ -2,7 +2,16 @@
 layout: default
 ---
 
+<div class="ui header">
+    <div class="site-name">
+        {{ site.title }}
+    </div>
+</div>
+
 {% include breadcrumbs.html %}
+
+<div class="ui divider"></div>
+
 
 <article role="main" class="post" itemscope itemtype="http://schema.org/CreativeWork">
     {% if page.title %}

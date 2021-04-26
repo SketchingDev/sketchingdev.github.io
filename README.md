@@ -11,10 +11,9 @@ bundle exec jekyll serve
 
 ## Resizing sketchnote images
 
-```shell
-sips -Z 640 <input> --out <output>
-```
-
+1. Load [Croppola](https://croppola.com/)
+2. Aspect ratio 4:3
+3. Crop width: 500px
 
 ### Problem installing racc
 
