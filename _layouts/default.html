@@ -33,12 +33,9 @@
     {{ content }}
 
     <div class="ui divider"></div>
-    <div class="page__footer">
-        <footer>
-            &copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
-        </footer>
-    </div>
-
+    <footer>
+        &copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
+    </footer>
 </div>
 
 {% include analytics.html %}
