@@ -4,12 +4,11 @@
   </div>
 </div>
 
-<nav class="ui breadcrumb">
+<nav class="ui text menu">
   {% for link in site.data.navigation.main %}
     <a class="item" href="{{ domain }}{{ link.url }}">
       {{ link.title }}
     </a>
-    {% if forloop.last == false %} / {% endif %}
   {% endfor %}
 </nav>
 
