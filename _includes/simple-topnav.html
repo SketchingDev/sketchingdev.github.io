@@ -1,0 +1,21 @@
+<div class="ui text menu">
+
+  <div class="left menu">
+    {% for link in site.data.navigation.main %}
+    <a class="item" href="{{ domain }}{{ link.url }}">
+      {{ link.title }}
+    </a>
+    {% endfor %}
+  </div>
+
+  <div class="right item">
+    <div class="ui header">
+      <div class="site-name">
+        {{ site.title }}
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="ui divider"></div>

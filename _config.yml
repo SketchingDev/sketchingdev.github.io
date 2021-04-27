@@ -1,4 +1,4 @@
-title: The Sketching Developer
+title: Sketching Developer
 title_separator: "-"
 description: "Sketching my way through developer topics"
 baseurl: ""
@@ -18,6 +18,11 @@ analytics:
 
 # Build settings
 markdown: kramdown
+
+kramdown:
+  syntax_highlighter_opts:
+    css_class: 'highlight ui segment'
+
 plugins:
   - jekyll-feed
 
@@ -28,5 +33,10 @@ author:
 # mimic GitHub Pages with --safe
 whitelist:
   - jekyll-feed
+
+collections:
+  sketchnotes:
+    output: true
+    permalink: /:collection/:title.html
 
 permalink: /blog/:title.html
