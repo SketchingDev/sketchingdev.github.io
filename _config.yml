@@ -12,9 +12,6 @@ twitter:
   username: SketchingDev
 github:
   username: SketchingDev
-analytics:
-  google:
-    tracking_id: UA-117483921-1
 
 # Build settings
 markdown: kramdown
