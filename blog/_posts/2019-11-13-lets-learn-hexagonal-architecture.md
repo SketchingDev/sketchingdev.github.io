@@ -6,8 +6,6 @@ categories: architecture hexagonal
 image-base: /assets/images/posts/2019-11-13-lets-learn-hexagonal-architecture
 ---
 
-*I originally posted this article on [my work's blog](https://tech.ovoenergy.com/hexagonal-architecture-formally-known-as-ports-adaptors/).*
-
 Since humans have been able to build structures, we have formed techniques and principles that other builders can apply, so they aren’t condemned to relive the same mistakes. Even the most audacious architectural marvels, such as the spectacular Duomo in Florence, aren’t just the isolated achievements of a maverick polymath; but the considered applications of principles and techniques learned from previous generations to solve a very unique problem.
 
 Software Development is similar (probably only in this regard) in that we share design patterns, principles and architectures distilled from the similarities between solutions to the same kind of problems. Learning of these and applying them in the appropriate situations prevents us from having to relive the difficulties faced by other members of the community.
