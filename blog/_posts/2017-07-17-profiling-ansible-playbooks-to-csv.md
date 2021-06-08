@@ -10,7 +10,7 @@ To aid in investigating the affect of the latency on our playbooks I used the fo
 
 ## Instructions
 
-As per the Ansible profile plugin’s [usage instructions](https://docs.ansible.com/ansible/devel/plugins/callback/profile_tasks.html) enable task profiling in Ansible 2.0+ by adding `profile_tasks` to the `callback_whitelist` in the `ansible.cfg` file.
+As per the Ansible profile plugin’s [usage instructions](https://docs.ansible.com/ansible/latest/collections/ansible/posix/profile_tasks_callback.html) enable task profiling in Ansible 2.0+ by adding `profile_tasks` to the `callback_whitelist` in the `ansible.cfg` file.
 
 ```
 [defaults]

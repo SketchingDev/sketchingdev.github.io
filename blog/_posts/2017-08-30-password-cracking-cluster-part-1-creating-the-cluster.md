@@ -26,8 +26,8 @@ Manually configuring multiple machines can be a laborious and error prone busine
 
 To further explain the simplicity of Ansible, it comprises of two main types of files:
 
-- [Inventory](http://docs.ansible.com/ansible/intro_inventory.html) - this describes the nodes by network address and desired configuration, in this case they’re either a Master or Slave.
-- [Playbooks](http://docs.ansible.com/ansible/playbooks_intro.html#about-playbooks) - YAML files that define the ‘state’ of a configuration. These files list the configuration/state that you want the machines to have .e.g. to have a user with certain access rights and packages x, y and z to be present.
+- [Inventory](https://docs.ansible.com/ansible/2.3/intro_inventory.html#id5) - this describes the nodes by network address and desired configuration, in this case they’re either a Master or Slave.
+- [Playbooks](https://docs.ansible.com/ansible/2.3/playbooks_intro.html#intro-to-playbooks) - YAML files that define the ‘state’ of a configuration. These files list the configuration/state that you want the machines to have .e.g. to have a user with certain access rights and packages x, y and z to be present.
 
 ![Ansible configuring cluster via inventory and playbooks]({{ page.image-base }}/ansible-playbooks.png)
 

@@ -6,7 +6,7 @@ categories: android monkeyrunner
 image-base: /assets/images/posts/2015-08-03-conquering-the-monolith-beast-with-android-monkeyrunner
 ---
 
-Though it may be generally considered cheating, when I was faced with having to endure repeatedly tapping the beast in the game [Monolith on Android](https://play.google.com/store/apps/details?id=com.cac.monolith) I did what every good programmer does and automated the task.
+Though it may be generally considered cheating, when I was faced with having to endure repeatedly tapping the beast in the game Monolith on Android - since renamed to [Tap & Conquer](https://play.google.com/store/apps/details?id=com.cac.tap.and.conquer) - I did what every good programmer does and automated the task.
 
 The tool I used was [Android's MonkeyRunner](http://developer.android.com/tools/help/monkeyrunner_concepts.html) as I was planning on using to test the UI of an app I was writing, so provided me with good practice.
 
