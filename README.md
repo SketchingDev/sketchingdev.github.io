@@ -34,12 +34,7 @@ I resolved this by:
    ```
 3. I could then run the `bundle install` command above
 
+## Useful links
 
-## Thanks
-
-  * [Jekyll][jekyll] - Static website generator
-  * [Sparrow Theme][sparrow-theme] - Theme used by the site
-
-
-[jekyll]: https://jekyllrb.com/
-[sparrow-theme]: https://github.com/lingxz/sparrow
+ * [Broken Link Checker](https://ahrefs.com/broken-link-checker)
+ * [Backlink Checker](https://ahrefs.com/backlink-checker)
