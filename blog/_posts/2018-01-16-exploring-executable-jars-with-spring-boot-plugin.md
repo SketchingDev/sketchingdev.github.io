@@ -54,7 +54,7 @@ If the new JAR is too large for your liking, then read on, as next we'll have a 
 
 ### Extending the plugin
 
-The plugin comes with the ability to influence the resulting JAR by implementing a custom [Layout](https://docs.spring.io/spring-boot/docs/current/maven-plugin/examples/custom-layout.html).
+The plugin comes with the ability to influence the resulting JAR by implementing a custom [Layout](https://docs.spring.io/spring-boot/docs/current/maven-plugin/reference/htmlsingle/#packaging.examples.custom-layout).
 
 The default layouts create a “fat” JAR or WAR; but there are other layouts, such as the third-party [thin launcher](https://github.com/dsyer/spring-boot-thin-launcher) which results in a "thin" executable JAR that downloads its dependencies instead of bundling them in and greatly reduces the size of the resulting JAR.
 

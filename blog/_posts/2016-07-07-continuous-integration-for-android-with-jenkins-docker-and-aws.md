@@ -7,7 +7,7 @@ image-base: /assets/images/posts/2016-07-07-continuous-integration-for-android-w
 ---
 
 Recently I've been setting up and documenting automated build workflows for each of my projects in Jenkins.
-The other day it was [continuous deployment of my Jekyll website](http://sketchingdev.co.uk/blog/continuous-deployment-of-jekyll-website-with-jenkins.html),
+The other day it was [continuous deployment of my Jekyll website](https://sketchingdev.co.uk/blog/continuous-deployment-of-jekyll-website-with-jenkins.html),
 and now its continuous integration for my Android projects. My setup for Android projects utilises [Docker](http://www.docker.com/) to
 provision the build environments and [AWS Device Farm](https://aws.amazon.com/device-farm/)
 for the integration/smoke tests.

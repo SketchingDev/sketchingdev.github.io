@@ -30,7 +30,7 @@ Let’s explore Consumer-Driven Contracts by implementing [Spring Cloud Contract
 
 Whilst developing features for the Website, I want to inform the Image API of the expectations I have towards it, which I can do in **contracts**. These files simply exemplify the website’s interactions with the API. They are made accessible to the API and communicated to the team working on it.
 
-In my project these contracts live in the Image API’s test resources ([image-api/src/test/resources/contracts](https://github.com/SketchingDev/Draw-by-Days/tree/development/image-api/src/test/resources/contracts)), although they could just as easily live in a common location.
+In my project these contracts live in the Image API’s test resources ([image-api/src/test/resources/contracts](https://github.com/SketchingDev/Draw-by-Days/tree/361a00565eb52f12a57931a3ffd2add3eac91d50/image-api/src/test/resources/contracts)), although they could just as easily live in a common location.
 
 ```groovy
 org.springframework.cloud.contract.spec.Contract.make {
@@ -66,7 +66,7 @@ Now with contracts in place, Spring Cloud Contracts will do the following:
 
 All of this can happen in fast-running tests and without either of the services, depending on the other being stood up. What’s great is the website now has confidence that the API fulfils its expectations, and every time these contracts are tested against the API, an updated stub is automatically produced that can be used by dependent services to stub out the API in tests.
 
-The code below shows the Website using the Image API stub ([website/src/test/java/com/drawbydays/website/gallery/GalleryControllerTest.java](https://github.com/SketchingDev/Draw-by-Days/blob/development/website/src/test/java/com/drawbydays/website/gallery/GalleryControllerTest.java)).
+The code below shows the Website using the Image API stub ([website/src/test/java/com/drawbydays/website/gallery/GalleryControllerTest.java](https://github.com/SketchingDev/Draw-by-Days/blob/361a00565eb52f12a57931a3ffd2add3eac91d50/website/src/test/java/com/drawbydays/website/gallery/GalleryControllerTest.java)).
 
 ```java
 @RunWith(SpringRunner.class)
