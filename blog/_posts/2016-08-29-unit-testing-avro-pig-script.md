@@ -27,7 +27,7 @@ STORE people_over_24 INTO '$DATA_OUTPUT' USING AvroStorage();
 The not-so-obvious way of providing the test data is to instantiate the `PigTest` class with the location of your Avro
 data-file (the data contained within it is ignored). At runtime PigUnit will use the schema defined in the Avro file to
 override the `LOAD` statement with the schema, defined using the
-[`AS` keyword](https://pig.apache.org/docs/r0.7.0/piglatin_ref2.html#LOAD). You can see this in action by examining
+[`AS` keyword](https://pig.apache.org/docs/r0.17.0/basic.html#load). You can see this in action by examining
 the console's output when running the test.
 
 ```
