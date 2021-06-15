@@ -6,8 +6,6 @@ categories: terraform appsync aws
 image-base: /assets/images/posts/2019-03-14-deploying-appsync-with-terraform
 ---
 
-*I originally posted this article on [my work's blog](https://tech.ovoenergy.com/deploying-appsync-with-terraform/).*
-
 On the 28th November ’17 AWS introduced the world to [AppSync](https://aws.amazon.com/appsync/), its new fully managed GraphQL service that bridges the gap between your front-end and data-ladened backend. Most notably its features include data synchronisation (no more polling!) and offline capabilities.
 
 However long after its launch Terraform’s AWS Provider still doesn’t have all the resources necessary to deploy a complete instance of AppSync ([although they are very close to being released](https://github.com/terraform-providers/terraform-provider-aws/pull/6451)). Leaving some developers turning to  [Serverless](https://github.com/sid88in/serverless-appsync-plugin), manually intervening after deployments or using external scripts to make up for this short-fall.
