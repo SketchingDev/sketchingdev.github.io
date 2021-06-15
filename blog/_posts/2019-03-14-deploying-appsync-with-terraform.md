@@ -25,7 +25,7 @@ Currently the AWS Provider supports deploying the API, an authentication key and
 * ~~Schema~~
 * ~~Resolvers~~
 
-```
+```terraform
 resource "aws_appsync_graphql_api" "people" {
   name                = "${var.appsync_name}"
   authentication_type = "API_KEY"
@@ -65,7 +65,8 @@ The [aws_cloudformation_stack](https://www.terraform.io/docs/providers/aws/r/clo
 It’s then just a case of providing the parameters and any hidden dependencies via the `depends_on` meta-argument.
 
 #### AppSync Schema
-```
+
+```terraform
 data "local_file" "cloudformation_schema_template" {
   filename = "${path.module}/cloudformation-templates/schema.json"
 }
@@ -89,7 +90,8 @@ resource "aws_cloudformation_stack" "api_schema" {
 
 
 #### AppSync Resolver
-```
+
+```terraform
 data "local_file" "create_source_request_mapping" {
   filename = "${path.module}/people-api/resolvers/createPerson-request-mapping-template.txt"
 }
@@ -122,7 +124,7 @@ resource "aws_cloudformation_stack" "create_person_resolver" {
 ## Deploying your API
 You can now deploy your API with the usual `terraform apply` command:
 
-```
+```shell
 $ terraform apply -auto-approve
 
 ...
