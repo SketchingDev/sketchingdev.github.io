@@ -4,6 +4,7 @@
 <!doctype html>
 <html lang="en" class="no-js">
 <head>
+    {% include analytics.html %}
     <meta charset="utf-8">
 
     {% include seo.html %}
@@ -38,8 +39,5 @@
         &copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
     </footer>
 </div>
-
-{% include analytics.html %}
-
 </body>
 </html>
