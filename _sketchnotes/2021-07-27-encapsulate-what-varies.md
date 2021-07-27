@@ -1,7 +1,7 @@
 ---
 layout: sketchnote
-title: "Testing Pyramid"
-date: 2021-06-28 00:00:00
+title: "Encapsulate What Varies"
+date: 2021-07-27 00:00:00
 thumbnail: /assets/images/sketchnotes/2021-07-27-encapsulate-what-varies/encapsulate-what-varies-thumbnail.jpg
 ---
 
