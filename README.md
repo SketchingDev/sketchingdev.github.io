@@ -12,7 +12,8 @@ bundle exec jekyll serve
 ## Resizing sketchnote images
 
 1. Load [Croppola](https://croppola.com/)
-2. Resize to 500px x 500px
+2. Expand cropping area to whole image
+2. 'Scale to' 500px x 500px
 
 ### Problem installing racc
 
