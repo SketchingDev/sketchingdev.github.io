@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog-post
 title:  "Why you can't recover your KeePass password"
 date:   2015-05-02 00:00:00
 categories: keepass security csharp

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog-post
 title:  "Automating app store screenshots"
 date:   2017-10-02 00:00:00
 categories: android java testing

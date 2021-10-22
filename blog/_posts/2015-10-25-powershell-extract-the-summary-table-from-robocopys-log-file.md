@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog-post
 title:  "PowerShell: Extract the summary table from RoboCopy's log file"
 date:   2015-10-25 00:00:00
 categories: powershell robocopy

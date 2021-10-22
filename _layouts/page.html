@@ -2,15 +2,13 @@
 layout: default
 ---
 
-{% include topnav.html %}
+<div class="container col-lg-8 mx-auto p-3">
+    <main>
+        {% if page.title %}
+        <h1>{{ page.title }}</h1>
+        {% endif %}
 
-<div class="page">
-  {% if page.title %}
-  <h1 class="ui header"><span class="page-title">{{ page.title }}</span></h1>
-  {% endif %}
-  {% if page.subtitle %}
-    <p>{{ page.subtitle }}</p>
-  {% endif %}
-
-{{ content }}
+        {{ content }}
+    </main>
+    {% include footer.html %}
 </div>

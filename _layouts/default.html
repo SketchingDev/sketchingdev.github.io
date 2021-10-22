@@ -2,42 +2,48 @@
 ---
 
 <!doctype html>
-<html lang="en" class="no-js">
+<html lang="en">
 <head>
+    {% if jekyll.environment != "development" %}
     {% include analytics.html %}
+    {% endif %}
+
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta http-equiv="cleartype" content="on">
+    <meta name="p:domain_verify" content="c62ee05afe2ab518d234fccf2312a2a0"/>
 
     {% include seo.html %}
 
     <link href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | absolute_url }}{% endif %}"
           type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
 
-    <!-- http://t.co/dKP3o1e -->
-    <meta name="HandheldFriendly" content="True">
-    <meta name="MobileOptimized" content="320">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <!-- For all browsers -->
     <link href="https://fonts.googleapis.com/css?family=Gochi+Hand|Heebo:100,300,400,500,700,800,900" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
-    <link rel="stylesheet" href="{{ '/assets/css/main.css' }}">
+
+    <link rel="stylesheet" href="{{ '/assets/css/styles.css' }}">
     <link rel="stylesheet" href="{{ '/assets/css/syntax.css' }}">
 
     <link rel="shortcut icon" type="image/x-icon" href="{{ site.favicon | absolute_url }}">
-    <meta http-equiv="cleartype" content="on">
-    <meta name="p:domain_verify" content="c62ee05afe2ab518d234fccf2312a2a0"/>
 </head>
 
 <body>
-<div class="ui container">
+    {% assign menu_section = page.title %}
+
+    {% if page.menu_section %}
+    {% assign menu_section = page.menu_section %}
+    {% endif %}
+
+    {% if layout.menu_section %}
+    {% assign menu_section = layout.menu_section %}
+    {% endif %}
+
+    {% include topnav.html menu_section=menu_section %}
 
     {{ content }}
-
-    <div class="ui divider"></div>
-    <footer>
-        &copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
-    </footer>
-</div>
+    <script async src="{{ '/assets/js/bootstrap.min.js' }}"></script>
 </body>
 </html>

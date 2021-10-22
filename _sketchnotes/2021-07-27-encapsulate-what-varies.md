@@ -3,9 +3,8 @@ layout: sketchnote
 title: "Encapsulate What Varies"
 date: 2021-07-27 00:00:00
 thumbnail: /assets/images/sketchnotes/2021-07-27-encapsulate-what-varies/encapsulate-what-varies-thumbnail.jpg
+image: /assets/images/sketchnotes/2021-07-27-encapsulate-what-varies/encapsulate-what-varies.jpg
 ---
-
-![{{page.title}}](/assets/images/sketchnotes/2021-07-27-encapsulate-what-varies/encapsulate-what-varies.jpg)
 
 Encapsulate What Varies, or 'Encapsulate What Changes' is the technique of reducing the impact of frequently changing code by encapsulating it. The encapsulated code can then change independently to code that relies on it.
 

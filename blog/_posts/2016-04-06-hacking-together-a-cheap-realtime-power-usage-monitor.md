@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog-post
 title:  "Hacking together a cheap realtime power usage monitor"
 date:   2016-04-06 00:00:00
 categories: ssocr linux fswebcam

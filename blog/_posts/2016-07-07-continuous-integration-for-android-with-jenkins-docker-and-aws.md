@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog-post
 title:  "Continuous integration for Android with Jenkins, Docker and AWS"
 date:   2016-07-07 00:00:00
 categories: android jenkins docker CI AWS DevOps

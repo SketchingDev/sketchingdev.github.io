@@ -1,19 +1,43 @@
-# The Sketching Developer
+# Sketching Developer
 
-This site is my attempt at explaining developer topics in a way that I would have understood them.
+The Jekyll project for my personal site, where I attempt to explain developer topics in a way I would have 
+understood them.
 
 ## Development
 
 ```shell
 bundle install --path vendor/bundle
-bundle exec jekyll serve
+bundle exec jekyll serve --livereload
 ```
 
-## Resizing sketchnote images
+### Updating Bootstrap
+
+The site uses Bootstrap v5. 
+
+I integrated its SCSS stylesheets by:
+
+1. Check what version is currently being used in `_sass/bootstrap/scss/bootstrap.scss`. There's no point updating to the same version
+2. [Download and extract the latest v5.x source files](https://getbootstrap.com/docs/5.0/getting-started/download/#source-files)
+3. Delete the contents of the `_sass/bootstrap/` directory 
+4. Copy the contents of the `scss/` from the extracted download to `_sass/bootstrap/`
+
+The JS is a compiled version which is updated by:
+
+1. Check what version is currently being used in `assets/js/bootstrap.min.js` to make sure it matches the Bootstrap version above.
+2. [Download and extract the compiled version of the release](https://getbootstrap.com/docs/5.0/getting-started/download/#compiled-css-and-js)
+3. Copy the following files from the `js` directory in the extracted download to `assets/js/` - overwrite the existing files
+   * `bootstrap.min.js`
+   * `bootstrap.min.js.map`
+
+## Sketchnotes
+
+### Creating thumbnails
 
 1. Load [Croppola](https://croppola.com/)
 2. Expand cropping area to whole image
 2. 'Scale to' 500px x 500px
+
+## Troubleshooting
 
 ### Problem installing racc
 

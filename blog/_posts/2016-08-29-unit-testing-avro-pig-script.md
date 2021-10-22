@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog-post
 title:  "Testing Pig scripts that use Avro"
 date:   2016-08-29 00:00:00
 categories: testing pig avro java

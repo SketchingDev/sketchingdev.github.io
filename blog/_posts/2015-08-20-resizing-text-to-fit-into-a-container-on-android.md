@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog-post
 title:  "Resizing text to fit into a container on Android"
 date:   2015-08-20 00:00:00
 categories: android java

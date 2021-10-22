@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog-post
 title:  "Testing activity redirection in Android apps"
 date:   2017-07-11 00:00:00
 categories: android testing java

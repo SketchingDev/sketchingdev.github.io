@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog-post
 title:  "Password Cracking Cluster - Part 1: Creating the cluster"
 date:   2017-08-30 00:00:00
 categories: ansible security cluster

@@ -1,37 +1,35 @@
 ---
 layout: default
+menu_section: sketchnotes
 ---
 
-{% include simple-topnav.html %}
+{% case page.image_ratio %}
+{% when "wide" %}
+{% assign image_column_size = "col-lg-9" %}
+{% else %}
+{% assign image_column_size = "col-lg-5" %}
+{% endcase %}
 
-<article role="main" class="post" itemscope itemtype="http://schema.org/CreativeWork">
-    {% if page.title %}
-    <meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">
-    {% endif %}
-    {% if page.excerpt %}
-    <meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">
-    {% endif %}
-    {% if page.date %}
-    <meta itemprop="datePublished" content="{{ page.date | date: " %B %d, %Y" }}">
-    {% endif %}
-    {% if page.modified %}
-    <meta itemprop="dateModified" content="{{ page.modified | date: " %B %d, %Y" }}">
-    {% endif %}
-
-    <h1 class="ui header">
-        {% if page.title %}{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}{% endif %}
-
-        {% if page.date %}
-        <div class="sub header">
-            <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
+<div class="container mx-auto">
+    <main>
+        <div class="row">
+            <div class="col {{ image_column_size }} mx-auto">
+                <a href="{{ page.image | absolute_url }}">
+                    <img src="{{ page.image | absolute_url }}"
+                         class="shadow-sm img-fluid"
+                         alt="{{ page.title | strip_html | strip_newlines | escape_once }}">
+                </a>
+            </div>
         </div>
-        {% endif %}
-    </h1>
+        <div class="row">
+            <div class="col col-lg-5 mx-auto p-3 images-fluid">
+                {% if page.title %}
+                <h1 class="sketchnote-title">{{ page.title }}</h1>
+                {% endif %}
 
-    {{ content }}
-
-    <div class="ui hidden divider"></div>
-    <p style="font-style: italic">If you have any suggestions on how I can improve this sketchnote then
-        please let me know <a href="https://twitter.com/{{ site.twitter.username }}">@{{ site.twitter.username }}</a>
-    </p>
-</article>
+                {{ content }}
+            </div>
+        </div>
+    </main>
+    {% include footer.html %}
+</div>

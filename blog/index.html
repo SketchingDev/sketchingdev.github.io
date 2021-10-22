@@ -3,6 +3,21 @@ layout: page
 title: Blog
 ---
 
-{% for post in site.posts %}
-  {% include post-entry.html %}
-{% endfor %}
+<ol class="list-unstyled">
+    {% for post in site.posts %}
+    <li class="pb-2">
+        <div>
+            {% if post.link %}
+            <a href="{{ post.link }}">{{ post.title }}</a>
+            {% else %}
+            <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
+            {% endif %}
+        </div>
+        {% if post.date %}
+        <small class="text-muted">
+            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
+        </small>
+        {% endif %}
+    </li>
+    {% endfor %}
+</ol>

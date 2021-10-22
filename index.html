@@ -1,0 +1,20 @@
+---
+layout: wide-page
+title: Sketchnotes
+---
+
+<p>Sketches of software development concepts, investigations, incidents with systems at work and everything in between...</p>
+
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-4">
+    {% assign sorted_sketchnotes = site.sketchnotes | reverse %}
+    {% for sketchnote in sorted_sketchnotes %}
+    <div class="col">
+        <div class="card border-0">
+            <a href="{{ sketchnote.url | absolute_url }}">
+                <img src="{{ sketchnote.thumbnail | absolute_url }}" class="card-img-top"
+                     alt="Thumbnail of {{ sketchnote.title | strip_html | strip_newlines | escape_once }} sketchnote">
+            </a>
+        </div>
+    </div>
+    {% endfor %}
+</div>

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog-post
 title:  "Simplify mocking Dagger2 dependencies with DaggerMock"
 date:   2017-01-21 00:00:00
 categories: android testing java

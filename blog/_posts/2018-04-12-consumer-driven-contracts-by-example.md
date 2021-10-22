@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog-post
 title:  "Consumer-Driven Contracts by Example"
 date:   2018-04-12 00:00:00
 categories: spring testing contracts cdc

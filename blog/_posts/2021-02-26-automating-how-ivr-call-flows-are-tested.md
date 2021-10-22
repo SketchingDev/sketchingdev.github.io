@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog-post
 title:  "Automating how IVR call flows are tested"
 date:   2021-03-03 00:00:00
 categories: ivr call flow automation testing

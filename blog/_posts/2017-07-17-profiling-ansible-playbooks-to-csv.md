@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog-post
 title:  "Profiling Ansible playbooks"
 date:   2017-07-17 00:00:00
 categories: ansible

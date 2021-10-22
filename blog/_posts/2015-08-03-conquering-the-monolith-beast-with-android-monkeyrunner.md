@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog-post
 title:  "Conquering the Monolith beast with Android MonkeyRunner"
 date:   2015-08-03 00:00:00
 categories: android monkeyrunner

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog-post
 title:  "Exploring executable JARs with the Spring Boot Plugin"
 date:   2018-01-16 00:00:00
 categories: spring java

@@ -36,7 +36,13 @@ collections:
     output: true
     permalink: /:collection/:title.html
 
+feed:
+  collections:
+    - sketchnotes
+    - posts
+
 permalink: /blog/:title.html
+
 # Without this building the website fails, saying it can't find the
 # Primer theme - which is correct as I removed all themes from the
 # Gemfile.lock when GitHub complained that the Primer theme wasn't

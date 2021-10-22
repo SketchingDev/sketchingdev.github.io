@@ -1,9 +1,7 @@
 main:
-  - title: "home"
+  - title: "sketchnotes"
     url: /
   - title: "blog"
     url: /blog
-  - title: "sketchnotes"
-    url: /sketchnotes
   - title: "subscribe"
-    url: /feed.xml
+    url: /subscribe

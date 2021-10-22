@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog-post
 title:  "Testing Docker images"
 date:   2017-06-07 00:00:00
 categories: docker testing

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog-post
 title:  "How ProGuard protects Android applications from reverse engineering"
 date:   2015-11-05 00:00:00
 categories: android security

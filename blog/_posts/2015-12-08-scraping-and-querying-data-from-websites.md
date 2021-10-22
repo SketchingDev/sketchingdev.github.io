@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog-post
 title:  "Scraping and querying data from websites"
 date:   2015-12-08 00:00:00
 categories: python scraping mongodb scrapy

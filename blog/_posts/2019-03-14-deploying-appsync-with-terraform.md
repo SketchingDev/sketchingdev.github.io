@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog-post
 title:  "Deploying AppSync with Terraform"
 date:   2019-03-14 00:00:00
 categories: terraform appsync aws

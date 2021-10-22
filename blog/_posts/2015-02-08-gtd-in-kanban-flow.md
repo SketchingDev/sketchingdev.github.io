@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog-post
 title:  "Getting Things Done (GTD) in KanbanFlow"
 date:   2015-02-08 00:00:00
 categories: gtd kanban kanbanflow

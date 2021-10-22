@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog-post
 title:  "Continuous deployment of Jekyll website with Jenkins"
 date:   2016-05-22 00:00:00
 categories: jekyll jenkins rake bundler docker ruby devops

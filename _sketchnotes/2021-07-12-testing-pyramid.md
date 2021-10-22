@@ -3,9 +3,8 @@ layout: sketchnote
 title: "Testing Pyramid"
 date: 2021-06-28 00:00:00
 thumbnail: /assets/images/sketchnotes/2021-07-12-testing-pyramid/testing-pyramid-thumbnail.jpg
+image: /assets/images/sketchnotes/2021-07-12-testing-pyramid/testing-pyramid.jpg
 ---
-
-![{{page.title}}](/assets/images/sketchnotes/2021-07-12-testing-pyramid/testing-pyramid.jpg)
 
 The Testing Pyramid, devised by [Mike Cohn](https://twitter.com/mikewcohn), is a guide for the types of automated tests
 to favour in a project's test suite. It points at the unreliability, slow and costly nature of end-to-end tests by

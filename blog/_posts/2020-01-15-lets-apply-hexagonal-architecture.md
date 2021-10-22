@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog-post
 title:  "Let's apply Hexagonal Architecture!"
 date:   2020-01-15 00:00:00
 categories: architecture hexagonal
