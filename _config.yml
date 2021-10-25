@@ -1,5 +1,6 @@
 title: Sketching Developer
 title_separator: "-"
+locale: en-GB
 description: "Sketching my way through developer topics"
 baseurl: ""
 url: ""
@@ -22,6 +23,7 @@ kramdown:
 
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 
 # Site Author
 author:
@@ -30,6 +32,7 @@ author:
 # mimic GitHub Pages with --safe
 whitelist:
   - jekyll-feed
+  - jekyll-seo-tag
 
 collections:
   sketchnotes:

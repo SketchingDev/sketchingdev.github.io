@@ -220,6 +220,7 @@ PLATFORMS
 DEPENDENCIES
   github-pages (~> 215)
   jekyll-feed (~> 0.15.1)
+  jekyll-seo-tag
   tzinfo-data
 
 BUNDLED WITH
