@@ -18,4 +18,3 @@ after he observed recesses in the stones of Roman architecture.
 ## Related Reading
 
 - [Wikipedia page on the Lewis Bolt](https://en.wikipedia.org/wiki/Lewis_(lifting_appliance))
-- [Brunelleschi's Dome Book](https://www.goodreads.com/book/show/6050499-brunelleschi-s-dome)
