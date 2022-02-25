@@ -17,12 +17,12 @@ Here's a written breakdown:
 
 The Producer's Partitioner decides on which partition Kafka should store the message in on the topic. It can decide this based on the message's key, from the producer or simply round-robin.
 
-![](/assets/images/sketchnotes/2021-10-11-anatomy-of-an-incident-events-on-kafka-topic-out-of-order/overview-of-partitioning-data.png)
+![Diagram of Kafka Producer's messages being partitioned by Account ID](/assets/images/sketchnotes/2021-10-11-anatomy-of-an-incident-events-on-kafka-topic-out-of-order/overview-of-partitioning-data.png)
 
 Kafka guarantees the order of messages within these partitions, but not **across** partitions.
 
 When the service was rewritten a Partitioner from another language was used. Although both decided on partitions based on the message's key, the new one did it differently.
 
-![](/assets/images/sketchnotes/2021-10-11-anatomy-of-an-incident-events-on-kafka-topic-out-of-order/incident.png)
+![Diagram of new Kafka Producer partitioning messages with same Account ID differently](/assets/images/sketchnotes/2021-10-11-anatomy-of-an-incident-events-on-kafka-topic-out-of-order/incident.png)
 
 This means that if a consumer re-consumed the topic then the events for specific accounts would be out of order.

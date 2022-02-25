@@ -70,7 +70,6 @@ export const closeAccount = ({
   await accountManager.closeAccount(accountId);
   await instrumentation.closedAccount(accountId);
 };
-
 ```
 
 Our core functionality is pretty self explanatory; all of its interactions with the outside world are performed through domain-specific ports, meaning it is completely agnostic of the technical infrastructure that it is going to interact with.
