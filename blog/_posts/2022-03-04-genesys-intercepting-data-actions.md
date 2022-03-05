@@ -1,9 +1,9 @@
 ---
 layout: blog-post
-title:  "Genesys: Intercepting Data Actions"
+title:  "Genesys: Troubleshooting Data Actions"
 date:   2022-03-04 00:00:00
 categories: software developers ccaas genesys
-image-base: /assets/images/posts/2022-03-04-genesys-intercepting-data-actions
+image-base: /assets/images/posts/2022-03-04-genesys-troubleshooting-data-actions
 ---
 
 When creating Data Actions (and their dependent flows) in [Genesys](https://www.genesys.com/) I spent a lot of 
