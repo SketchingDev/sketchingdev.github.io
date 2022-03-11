@@ -1,15 +1,15 @@
 ---
 layout: blog-post
-title:  "Genesys: Troubleshooting Data Actions"
+title:  "Genesys: Troubleshooting Web Service Data Actions"
 date:   2022-03-04 00:00:00
-categories: software developers ccaas genesys
+categories: software developers ccaas genesys data-action
 image-base: /assets/images/posts/2022-03-04-genesys-troubleshooting-data-actions
 ---
 
-When creating Data Actions (and their dependent flows) in [Genesys](https://www.genesys.com/) I spent a lot of 
-time debugging problems around the Data Actions - the main culprit being input values that resulted in unexpected
+When creating Web Service Data Actions (and their dependent flows) in [Genesys](https://www.genesys.com/) I spent a lot of 
+time debugging problems around these Data Actions - the main culprit being input values that resulted in unexpected
 responses from a downstream API, breaking contracts/mappings. The following is how I sped up diagnosing problems by
-spying on the interaction between my Data Actions and downstream APIs.
+spying on the interaction between my Web Service Data Actions and downstream APIs.
 
 **WARNING: The tool used below should never be used to spy on Data Actions that are used by real customers. It
 terminates after a fixed period of time, has limited bandwidth and may leak secrets.**
