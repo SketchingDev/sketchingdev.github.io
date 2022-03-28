@@ -2,7 +2,7 @@
 layout: blog-post
 title:  "Genesys: Troubleshooting Web Service Data Actions"
 date:   2022-03-04 00:00:00
-categories: software developers ccaas genesys data-action
+categories: software developers CCaaS Genesys data-action
 image-base: /assets/images/posts/2022-03-04-genesys-troubleshooting-data-actions
 ---
 
@@ -28,7 +28,7 @@ Creating the tunnel will require [ngrok](https://ngrok.com/) to be installed loc
 
 1. Follow the [official instructions to install ngrok](https://ngrok.com/download)
 2. [Sign up for a free account](https://dashboard.ngrok.com/signup). You'll need this to be able to configure the proxy
-3. [Configure ngrok with an auth token](https://ngrok.com/docs#getting-started-authtoken) from the account you setup above
+3. [Configure ngrok with an auth token](https://ngrok.com/docs#getting-started-authtoken) from the account you set up above
 
 ## Creating a tunnel
 
@@ -43,7 +43,7 @@ ngrok http -host-header=<host> <host>:<port>
 
 ### Example
 
-If the data Data Action's URL is
+If the Data Action's URL is
 ```
 https://example.com/account/${input.AccountId} 
 ```
@@ -89,7 +89,7 @@ Connections                   ttl     opn     rt1     rt5     p50     p90
 
 ## Inspect requests
 
-Now ngrok is running and your Data Action is pointing at ngroks' forwarding address (aka tunnel) you can inspect
+Now ngrok is running and your Data Action is pointing at ngrok's forwarding address (aka tunnel) you can inspect
 HTTP(S) traffic going through it.
 
 Navigate to [http://127.0.0.1:4040/inspect/http](http://127.0.0.1:4040/inspect/http) to see the traffic, or
