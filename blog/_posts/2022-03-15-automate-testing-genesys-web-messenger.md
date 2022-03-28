@@ -2,11 +2,11 @@
 layout: blog-post
 title:  "Automate testing Genesys' Web Messenger"
 date:   2022-03-15 00:00:00
-categories: software developers ccaas genesys web messenger testing
+categories: software developers CCaaS Genesys web messenger testing
 image-base: /assets/images/posts/2022-03-15-automate-testing-genesys-web-messenger
 ---
 
-Manually testing chatbots can be a slow and error prone process, especially when testing all potential customer journeys. The quicker and more reliable approach to testing is to rely on automated tests, which can be triggered with a
+Manually testing chatbots can be a slow and error-prone process, especially when testing all potential customer journeys. The quicker and more reliable approach to testing is to rely on automated tests, which can be triggered with a
 click of a button, test all the functionality in a fraction of the time and even act as documentation.
 
 In this article I will guide you through how to write automated tests for [Genesys' Web Messenger](https://help.mypurecloud.com/articles/about-web-messaging/)
@@ -71,7 +71,7 @@ The highly contrived chatbot that we'll use as the subject of our test does the 
 
 <img src="{{ page.image-base }}/web-messenger-conversation.png" width="340" alt="Web Messenger Conversation">
 
-The test-script for such as simple bot is equally as simple:
+The test-script for such as simple bot is equally simple:
 ```yaml
 # test-script.yaml
 
@@ -113,7 +113,10 @@ Then watch it test the deployment:
 
 ## Conclusion
 
-Hopefully this article has whet your appetite for automating the testing of your Web Messenger flows.
+Hopefully this article has shown how easy it is to test Web Messenger Deployments, along with the advantages that come
+with automation! However, automated testing doesn't have to stop here... I'm working on another tool for
+[automating the testing of call flows](https://sketchingdev.co.uk/blog/automating-how-ivr-call-flows-are-tested.html)
+which I'd like to blog about soon.
 
-If you'd like to more documentation on the tool then check out its [GitHub repository](https://github.com/ovotech/genesys-web-messaging-tester#readme),
-else if you have any questions/suggestions then Tweet me [@SketchingDev](https://twitter.com/sketchingdev).
+Lastly, if you have any questions about the tool discussed in this article then checkout the documentation on
+its [GitHub repository](https://github.com/ovotech/genesys-web-messaging-tester#readme) or Tweet me [@SketchingDev](https://twitter.com/sketchingdev).
