@@ -86,7 +86,7 @@ scenarios:
     - waitForReplyContaining: Hello Lucas, how may I help you today?
 ```
 
-The test-script is written in a format known as [YAML](https://en.wikipedia.org/wiki/YAML), and is comprised of two
+The test-script is written in a format known as [YAML](https://en.wikipedia.org/wiki/YAML), and consists of two
 sections:
 
 #### Config
