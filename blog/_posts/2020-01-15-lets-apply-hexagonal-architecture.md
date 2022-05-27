@@ -34,7 +34,7 @@ Before we start writing code let’s step back and look at the interactions we�
 Each of these interactions can become a port, since if you remember a port is supposed to have a specific intention. The adaptors can then implement or invoke them, although not before we’ve fleshed out exactly what each port requires by implementing the core functionality….
 ![Hexagon with adaptors]({{ page.image-base }}/full-diagram.png)
 
-_To spare you precious minutes of your life we’ll only write a single adaptor on either side of the hexagon. If you’re interested in these other adaptors thought you can view them in the [solution’s repository](https://github.com/SketchingDev/hexagonal-lambda)._
+_To spare you precious minutes of your life we’ll only write a single adaptor on either side of the hexagon. If you’re interested in these other adaptors though you can view them in the [solution’s repository](https://github.com/SketchingDev/hexagonal-lambda)._
 
 ### Core functionality
 
