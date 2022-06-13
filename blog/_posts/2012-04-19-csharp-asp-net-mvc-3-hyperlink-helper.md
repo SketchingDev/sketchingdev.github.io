@@ -12,13 +12,13 @@ The HyperlinkExtensions class consists of two extension methods for the HtmlHelp
 ## Example usage
 
 ```csharp
-@Html.Hyperlink("http://sketchingdev.co.uk/", "Sketching Dev",
+@Html.Hyperlink("https://sketchingdev.co.uk/", "Sketching Dev",
     new Dictionary<string, object>()
     {
         {"title", "The Sketching Developer"}
     }
 )
-// Output: <a href="http://sketchingdev.co.uk/" title="The Sketching Developer">SketchingDev</a>
+// Output: <a href="https://sketchingdev.co.uk/" title="The Sketching Developer">SketchingDev</a>
 ```
 
 ## Hyperlink Extensions class
