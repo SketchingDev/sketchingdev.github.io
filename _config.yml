@@ -5,6 +5,7 @@ description: "Sketching my way through developer topics"
 favicon: "/assets/images/logo.png"
 avatar: "/assets/images/logo.png"
 comments: false
+url: https://sketchingdev.co.uk
 atom_feed:
   path: # blank (default) uses feed.xml
 twitter:
