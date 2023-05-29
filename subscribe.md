@@ -7,5 +7,5 @@ Interested in either the [sketchnotes]({{ domain }}/) or [blog articles]({{ doma
 
 * [Twitter](https://twitter.com/SketchingDev)
 * [Instagram](https://www.instagram.com/sketchingdev/)
-* [RSS - Sketchnotes]({{ domain }}/feed/sketchnotes.xml)
-* [RSS - Blog articles]({{ domain }}/feed.xml)
+* [LinkedIn](https://www.linkedin.com/in/lucas-woodward-the-dev/)
+* RSS - ([Sketchnotes]({{ domain }}/feed/sketchnotes.xml) / [Blog articles]({{ domain }}/feed.xml))
