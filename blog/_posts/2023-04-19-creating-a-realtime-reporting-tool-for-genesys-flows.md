@@ -77,7 +77,7 @@ For my code to know that a Participant Attribute has been set, updated or delete
 
 The AttributeUpdated event that my code processes contains the Conversation's ID and all the attributes associated to it, even those that didn't change since the last event.
 
-```json
+```
 {
   // ...
   eventBody: {
@@ -87,7 +87,7 @@ The AttributeUpdated event that my code processes contains the Conversation's ID
       "CustomerRoutingMetric_Unknown(2023-03-05T08:18:04.568Z)": "1",
       "AccountID": "0-000000"
       }
-  };
+  }
 }
 ```
 
